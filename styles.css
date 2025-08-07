@@ -26,8 +26,7 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin: 2rem 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 0.9rem;
 }
 
 .reward-comparison thead {
@@ -53,6 +52,19 @@ body {
 .reward-comparison .highlight {
   font-weight: bold;
   color: #0073e6;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .reward-comparison th,
+  .reward-comparison td {
+    white-space: nowrap;
+  }
 }
 
 .landing-section {
