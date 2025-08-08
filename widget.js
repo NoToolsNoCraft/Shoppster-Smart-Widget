@@ -196,23 +196,23 @@ function createWidget() {
             <h3>Trenutne Ponude</h3>
             <div class="offer-card">
               <h4>Ponuda Dana</h4>
-              <p>Mock: 30% popusta na TV! Vredi samo danas.</p>
+              <p>30% popusta na TV! Vredi samo danas.</p>
               <button class="offer-button" aria-label="Pogledaj Ponudu Dana">Pogledaj Ponudu</button>
             </div>
             <div class="offer-card">
               <h4>Smart Izbor</h4>
-              <p>Mock: Bela tehnika uz 20% popusta, vredi do kraja nedelje.</p>
+              <p>Bela tehnika uz 20% popusta, vredi do kraja nedelje.</p>
               <button class="offer-button" aria-label="Pogledaj Smart Izbor">Pogledaj Ponudu</button>
             </div>
             ${data.user.isSBB ? `
               <div class="offer-card">
                 <h4>Connect Mesečna Ponuda</h4>
-                <p>Mock: 50 artikala sa popustima do 50%!</p>
+                <p>50 artikala sa popustima do 50%!</p>
                 <button class="offer-button" aria-label="Pogledaj Connect Mesečnu Ponudu">Pogledaj Ponudu</button>
               </div>
               <div class="offer-card">
                 <h4>Connect Shopping Vikend</h4>
-                <p>Mock: Ekskluzivne cene 15-16. avgusta!</p>
+                <p>Ekskluzivne cene 15-16. avgusta!</p>
                 <button class="offer-button" aria-label="Pogledaj Connect Shopping Vikend">Pogledaj Ponudu</button>
               </div>
             ` : ''}
@@ -276,5 +276,6 @@ function createWidget() {
     updateWidget(loadUserData());
   });
 }
+
 
 document.addEventListener('DOMContentLoaded', createWidget);
