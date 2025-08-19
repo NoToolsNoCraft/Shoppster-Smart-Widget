@@ -105,7 +105,7 @@ function createWidget() {
 
   const button = document.createElement('button');
   button.id = 'loyalty-widget-button';
-  button.innerHTML = '🎁 Shoppster Smart Nagrade';
+  button.innerHTML = '<span style="font-size: 30px;">🛍️</span> Koliko mogu uštedeti?';
   root.appendChild(button);
 
   const panel = document.createElement('div');
